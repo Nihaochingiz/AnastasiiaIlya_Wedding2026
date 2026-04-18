@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Анастасия & Илья | 10 июня 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.svg">
+</head>
+<body>
+
+<div class="flower-pattern"></div>
+
+<div class="wedding-container">
+    <div class="content-grid">
+        <div class="left-text">
+            <div class="big-letter">A</div>
+            <div class="divider"></div>
+            <div class="name-top">АНАСТАСИЯ</div>
+            <div class="ampersand-line">&</div>
+            <div class="name-bottom">ИЛЬЯ</div>
+            <div class="divider-bottom"></div>
+            <div class="small-i">И</div>
+        </div>
+
+        <div class="right-side">
+            <img src="./images/our_wedding_1.jpg" 
+                 alt="Анастасия и Илья" 
+                 class="wedding-photo"
+                 width="317"
+                 height="469"
+                 onerror="this.onerror=null; this.src='https://placehold.co/317x469/e8ede2/8a9a7a?text=Наше+фото';">
+            <div class="photo-caption">10 июня 2026 <br>Ждем вас</div>
+        </div>
+    </div>
+
+    <!-- ТАЙМЕР -->
+    <div class="countdown-section">
+        <div class="countdown-title">До нашей свадьбы осталось</div>
+        <div class="timer" id="timerContainer">
+            <div class="time-block"><div class="time-number" id="weeks">00</div><div class="time-label">Недель</div></div>
+            <div class="time-block"><div class="time-number" id="days">00</div><div class="time-label">Дней</div></div>
+            <div class="time-block"><div class="time-number" id="hours">00</div><div class="time-label">Часов</div></div>
+            <div class="time-block"><div class="time-number" id="minutes">00</div><div class="time-label">Минут</div></div>
+            <div class="time-block"><div class="time-number" id="seconds">00</div><div class="time-label">Секунд</div></div>
+        </div>
+        <div id="expiredMsg" class="expired-message" style="display: none;"></div>
+    </div>
+
+    <!-- Секция с приглашением -->
+    <div class="invitation-section">
+        <div class="invitation-text">
+            <div class="greeting">Дорогой Гость!</div>
+            <div class="message">В нашей жизни скоро состоится важное событие - наша свадьба! Мы приглашаем вас и будем рады провести этот особенный день в кругу самых близких людей!</div>
+            <div class="wedding-date">10.06.2026</div>
+        </div>
+        <div class="invitation-photo">
+            <img src="./images/our_wedding_2.jpg" 
+                 alt="Приглашение" 
+                 class="invitation-img"
+                 width="360"
+                 height="490"
+                 onerror="this.onerror=null; this.src='https://placehold.co/360x490/e8ede2/8a9a7a?text=Наше+фото';">
+        </div>
+        <div class="handwritten-quote">Там, где посеяна любовь, растет радость</div>
+    </div>
+
+    <!-- Секция с местом проведения -->
+    <div class="location-section">
+        <div class="location-title">МЕСТО ПРОВЕДЕНИЯ</div>
+        <div class="location-text">
+            Торжественная часть нашей свадьбы пройдет в ЗАГСе Калининского р-на (ул. Верности, 4), праздничная - в банкетном зале "Mon Amour" (ул. Садовая, 83)
+        </div>
+    </div>
+
+    <!-- Секция с пожеланиями по подаркам -->
+    <div class="gifts-section">
+        <div class="gifts-title">ПОЖЕЛАНИЯ ПО ПОДАРКАМ</div>
+        <div class="gifts-text">
+            <p>Ваше присутствие в день нашей свадьбы - самый значимый подарок!</p>
+            <p>Но мы были бы очень рады получить денежный подарок, который поможет нам в начале нашего совместного пути.</p>
+            <p>Мы также понимаем, что дарить цветы на свадьбу - это традиция, но мы будем переживать за их сохранность на протяжении целого дня, поэтому просим обговорить этот момент с близкими и свести к минимуму количество букетов.</p>
+        </div>
+    </div>
+
+    <!-- Секция с программой свадьбы -->
+    <div class="program-section">
+        <div class="program-title">ПРОГРАММА СВАДЬБЫ</div>
+        <div class="program-timeline">
+            <div class="timeline-item">
+                <div class="timeline-time">15:00</div>
+                <div class="timeline-desc">Сбор гостей<br>Встреча в ЗАГСе</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">15:20</div>
+                <div class="timeline-desc">Церемония регистрации брака</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">16:30</div>
+                <div class="timeline-desc">Прогулка<br>Трансфер до центра города, прогулка ~1,5 ч, фотосессия молодожёнов</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">18:30</div>
+                <div class="timeline-desc">Банкет<br>Трансфер до зала, банкет, танцы, поздравления</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">23:00</div>
+                <div class="timeline-desc">Завершение праздничного дня</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция подтверждения - часть 1 -->
+    <div class="confirmation-request-section">
+        <div class="confirmation-title">ПОДТВЕРЖДЕНИЕ</div>
+        <div class="confirmation-text">
+            <p>Пожалуйста, подтвердите свое присутствие до <span class="confirm-date">25.05.2026</span></p>
+        </div>
+    </div>
+
+    <!-- Секция подтверждения - часть 2 (рукописная фраза + дресс-код) -->
+    <div class="happy-dresscode-section">
+        <div class="handwritten-happy">Будем счастливы видеть вас</div>
+        <div class="dresscode-text">
+            <p>Стиль нашей свадьбы - Классический с элементами Greenery (использование зелени и зелёного цвета). Ограничений по дресс-коду нет, можете выбирать любую цветовую гамму, однако просим избегать слишком ярких цветов.</p>
+        </div>
+    </div>
+
+    <footer>Анастасия & Илья · 10.06.2026</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
